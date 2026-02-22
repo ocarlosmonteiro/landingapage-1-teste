@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #111;
+    color: #fff;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url('../img/fotos/musculação.jpg') no-repeat center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: #ff3c00;
+}
+
+.hero p {
+    margin: 20px 0;
+    font-size: 1.2rem;
+    max-width: 600px;
+}
+
+.btn {
+    background-color: #ff3c00;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: #ff5722;
+}
+
+/* SOBRE */
+.sobre {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #1a1a1a;
+}
+
+.sobre h2 {
+    margin-bottom: 40px;
+    font-size: 2.2rem;
+    color: #ff3c00;
+}
+
+.beneficios {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #222;
+    padding: 30px;
+    border-radius: 10px;
+    width: 300px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    background-color: #292929;
+}
+
+.card h3 {
+    margin-bottom: 15px;
+    color: #ff3c00;
+}
+
+/* MODALIDADES */
+.modalidades {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #111;
+}
+
+.modalidades h2 {
+    margin-bottom: 50px;
+    font-size: 2.2rem;
+    color: #ff3c00;
+}
+
+.grid-modalidades {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.modalidade {
+    background-color: #1a1a1a;
+    padding: 60px;
+    border-radius: 10px;
+    transition: 0.3s;
+    border: 1px solid transparent;     
+}
+
+.modalidade:nth-child(1) {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+            url('../img/fotos/musculação.jpg') no-repeat center/cover;    
+}
+
+.modalidade:nth-child(2) {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url('../img/fotos/funcional.jpg') no-repeat center/cover;
+}
+
+.modalidade:nth-child(3) {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url('../img/fotos/funcional-kids.png') no-repeat center/cover;
+}
+
+.modalidade:nth-child(4) {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url('../img/fotos/pilates.png') no-repeat center/cover;
+}
+
+.modalidade:nth-child(5) {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url('../img/fotos/gap.jpg') no-repeat center/cover;
+}
+
+.modalidade:nth-child(6) {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url('../img/fotos/fitdance.jpg') no-repeat center/cover;
+}
+
+.modalidade:nth-child(7) {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url('../img/fotos/boxe.jpg') no-repeat center/cover;
+}
+
+.modalidade:hover {
+    border: 1px solid #ff3c00;
+    transform: scale(1.05);
+}
+
+.modalidade h3 {
+    margin-bottom: 15px;
+    color: #ff3c00;
+}
+
+/* FUNCIONAMENTO */
+.funcionamento {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #1a1a1a;
+}
+
+.funcionamento h2 {
+    margin-bottom: 50px;
+    font-size: 2.2rem;
+    color: #ff3c00;
+}
+
+.grid-funcionamento {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    width: 80%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.horarios h3,
+.localizacao h3 {
+    margin-bottom: 15px;
+    color: #ff3c00;
+}
+
+.horarios ul {
+    list-style: none;
+}
+
+.horarios ul li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}  
+
+.localizacao p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.localizacao iframe {
+    width: 100%;
+    height: 300px;
+    max-height: 500px;
+    border-radius: 10px;
+}
+
+
+/* RODAPÉ */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000;
+    font-size: 0.9rem;
+}
+
+#logo
+{
+    height: 150px;
+    max-height: 25dvh;
+}
+
+.grid-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.container-redes-sociais {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-top: 2px solid #333;
+    border-bottom: 2px solid #333;
+    padding: 3% 10%;
+    gap: 20px;
+}
+
+.redes-sociais {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.redes-sociais img {
+    height: 4dvh;
+}
+
+.redes-sociais img:hover {
+    transform: scale(1.1);
+    transition: ease-in-out 0.3s;
+}
+
+.desenvolvedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.ancoras{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.ancoras a {
+    color: #ff3c00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+@media(max-width: 768px) {
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+}
